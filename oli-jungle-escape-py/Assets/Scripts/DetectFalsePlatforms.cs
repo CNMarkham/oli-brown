@@ -7,7 +7,7 @@ public class DetectFalsePlatforms : MonoBehaviour
     bool hit;
     void Update()
     {
-        hit = Physics.Raycast(transform.position, transform.forward, 2f);
+        hit = Physics.Raycast(transform.position, transform.forward, 2f, 1 << 8);
         Debug.DrawRay(transform.position, transform.forward * 2f, Color.red);
         if (hit == true)
         {
