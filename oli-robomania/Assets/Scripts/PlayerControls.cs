@@ -19,6 +19,10 @@ public class PlayerControls : MonoBehaviour
     // initialize RoboMan's jump force (y direction only)
     private Vector2 jumpForce = new Vector2(0f, 8f);
 
+    public float yForce;
+    public float xForce;
+    public float xDirection;
+
     // grab references to RoboMan's components for use in other functions
     void Awake()
     {
@@ -113,6 +117,12 @@ public class PlayerControls : MonoBehaviour
         if(collision.collider.tag == "Ground")
         {
             roboManIsOnTheGround = true;
+        }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Vector2 jumpForce = new Vector2(xForce * xDirection, 0);
+            roboManRigidBody.AddForce(jumpForce);
         }
     }
 

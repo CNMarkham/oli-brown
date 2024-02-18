@@ -34,6 +34,12 @@ public class EnemyMovement : MonoBehaviour
             xDirection = -1;
             enemyRigidBody.AddForce(Vector2.left * xForce);
         }
+
+        if (transform.position.y >= 4)
+        {
+            xDirection = -1;
+            enemyRigidBody.AddForce(Vector2.down * xForce);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -43,5 +49,14 @@ public class EnemyMovement : MonoBehaviour
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
             enemyRigidBody.AddForce(jumpForce);
         }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
+            enemyRigidBody.AddForce(jumpForce);
+            
+        }
+
+        
     }
 }
