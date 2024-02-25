@@ -518,7 +518,7 @@ MonoBehaviour:
     minValue: 1
     maxValue: 10
   bloomScattering: 1
-  bloomIntensity: 11.4
+  bloomIntensity: 3.24
 --- !u!1 &1149558803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2808907689783890032, guid: 34a17991105008e499630abd765bfa09, type: 3}
