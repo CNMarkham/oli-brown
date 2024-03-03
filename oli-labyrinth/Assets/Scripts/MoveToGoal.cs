@@ -29,9 +29,16 @@ public class MoveToGoal : MonoBehaviour
             animator.SetBool("isRunning", false);
         }
 
-        if (gameObject.CompareTag("Cube"))
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Cube"))
         {
             agent.destination = goal.position;
+            Debug.Log("AAAAAAAAAA");
         }
+        Debug.Log("AAAAAA");
     }
 }
