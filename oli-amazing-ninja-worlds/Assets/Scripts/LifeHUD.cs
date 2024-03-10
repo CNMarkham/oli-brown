@@ -22,5 +22,20 @@ public class LifeHUD : MonoBehaviour
     public void HurtPlayer()
     {
         Debug.Log("Ouch");
+        lives -= 1;
+        hearts[lives].SetActive(false);
+        if (lives == 0)
+        {
+            background.GetComponent<GameManager>().GameOver();
+        }
+    }
+
+    public void HealPlayer()
+    {
+        if (lives < 3)
+        {
+            hearts[lives].SetActive(true);
+            lives += 1;
+        }
     }
 }

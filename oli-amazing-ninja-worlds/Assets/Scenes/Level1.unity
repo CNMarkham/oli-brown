@@ -2822,7 +2822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -175}
+  m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737074211
@@ -3654,7 +3654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 1875767817}
-  HealthBar: {fileID: 1070424563}
+  HealthBar: {fileID: 1737074209}
 --- !u!4 &365266794849478841
 Transform:
   m_ObjectHideFlags: 0
@@ -3741,7 +3741,7 @@ PrefabInstance:
     - target: {fileID: 748992279688134216, guid: 050efd230c4094246b4f2c6039b362e7, type: 3}
       propertyPath: HealthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1737074209}
     - target: {fileID: 748992279688134216, guid: 050efd230c4094246b4f2c6039b362e7, type: 3}
       propertyPath: allParticles
       value: 
