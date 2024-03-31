@@ -16,6 +16,11 @@
             numObstaclesLeft += grid.GetPiecesOfType(obstacleTypes[i]).Count;
         }
 
+        hud.SetLevelType(type);
+        hud.SetScore(currentScore);
+        hud.SetTarget(numObstaclesLeft);
+        hud.SetRemaining(numMoves);
+
     }
 
     // Update is called once per frame
@@ -29,6 +34,8 @@
         base.OnMove();
 
         movesUsed++;
+
+        hud.SetRemaining(numMoves - movesUsed);
 
         if (numMoves - movesUsed == 0 && numObstaclesLeft > 0)
         {
@@ -46,9 +53,12 @@
             {
                 numObstaclesLeft--;
 
+                hud.SetTarget(numObstaclesLeft);
+
                 if (numObstaclesLeft == 0)
                 {
                     currentScore += 1000 * (numMoves - movesUsed);
+                    hud.SetScore(currentScore);
                     GameWin();
                 }
             }
