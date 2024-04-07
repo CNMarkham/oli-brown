@@ -412,6 +412,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0424ce6998ab4904aa0fc151485d2f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons:
+  - gameObject: {fileID: 261857921}
+    playerPrefKey: LevelOne
+  - gameObject: {fileID: 2036933864}
+    playerPrefKey: LevelTwo
+  - gameObject: {fileID: 1110845636}
+    playerPrefKey: LevelThree
 --- !u!1 &212003890
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +954,7 @@ GameObject:
   - component: {fileID: 835821694}
   - component: {fileID: 835821693}
   m_Layer: 5
-  m_Name: star1 (1)
+  m_Name: star2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1097,7 +1104,7 @@ GameObject:
   - component: {fileID: 928262952}
   - component: {fileID: 928262951}
   m_Layer: 5
-  m_Name: star1 (2)
+  m_Name: star3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1340,7 +1347,7 @@ GameObject:
   - component: {fileID: 1166512585}
   - component: {fileID: 1166512584}
   m_Layer: 5
-  m_Name: star1 (2)
+  m_Name: star3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1415,7 +1422,7 @@ GameObject:
   - component: {fileID: 1304391229}
   - component: {fileID: 1304391228}
   m_Layer: 5
-  m_Name: star1 (1)
+  m_Name: star2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1569,7 +1576,7 @@ GameObject:
   - component: {fileID: 1591686715}
   - component: {fileID: 1591686714}
   m_Layer: 5
-  m_Name: star1 (1)
+  m_Name: star2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1644,7 +1651,7 @@ GameObject:
   - component: {fileID: 1951289353}
   - component: {fileID: 1951289352}
   m_Layer: 5
-  m_Name: star1 (2)
+  m_Name: star3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
